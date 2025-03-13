@@ -1,0 +1,261 @@
+@media screen and (min-width: 589px) {
+    .screen {
+        background: url(../media/main-background.png);
+        background-size: cover;
+        position: relative;
+        height: 100vh;
+    }
+
+    .mainWebContainer {
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.144);
+        background-color: rgba(0, 0, 0, 0.192);
+        border-bottom-right-radius: 14px;
+        border-bottom-left-radius: 14px;
+        padding: 14px 15px 10px 15px;
+        backdrop-filter: blur(3px);
+        max-width: 1330px;
+        margin: 0 auto;
+
+        .navBar {
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            .txtName {
+                text-shadow: 0px 0px 20px #ff9d00;
+                color: #ff9d00;
+                font-weight: 800;
+                font-size: 28px;
+                opacity: 0.8;
+            }
+            .menuIcon {
+                display: none;
+            }
+            .navLinks {
+                display: flex;
+                gap: 22px;
+                .navLink {
+                    transition: 150ms all;
+                    color: #ffffff;
+                    opacity: 0.8;
+                }
+                .navLink:hover {
+                    text-shadow: 0px 0px 12px #ff9d00;
+                    color: #ff9d00;
+                }
+            }
+        }
+    }
+
+    .navLink {
+        padding-bottom: 5px;
+        position: relative;
+    }
+
+    .navLink::after {
+        content: '';
+        left: 50%;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        position: absolute;
+        background-color: #ff9d00;
+        transition: width 0.3s ease, left 0.3s ease;
+    }
+
+    .navLink:hover::after {
+        width: 100%;
+        left: 0;
+    }
+
+    .mainInfoBlock {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        left: 50%;
+        top: 50%;
+
+        .txtFirInfo {
+            color: #ffffff;
+            opacity: 0.8;
+            font-size: 32px;
+            text-shadow: 0px 0px 2px #ff9d00;
+            span {
+                color: #ff9d00;
+            }
+        }
+
+        .txtSecInfo {
+            opacity: 0.8;
+            font-weight: 400;
+            color: #ffffff;
+            text-shadow: 0px 0px 2px #ff9d00;
+            margin: 10px 0 10px 0;
+        }
+
+        .btnBox {
+            justify-content: center;
+            display: flex;
+            gap: 30px;
+
+            button {
+                border-radius: 2px;
+                cursor: pointer;
+                width: 200px;
+                height: 50px;
+                backdrop-filter: blur(1px);
+                background: rgba(217, 217, 217, 0.15);
+                border: none;
+                line-height: 1;
+                letter-spacing: 0.03em;
+                font-size: 18px;
+                color: hsla(0, 0%, 100%, 0.8);
+                transition: 150ms all;
+            }
+
+            button:hover {
+                backdrop-filter: blur(2px);
+                background: rgba(217, 217, 217, 0.15);
+                box-shadow: 0px 0px 15px -5px #ff9d00;
+                text-shadow: 0px 0px 0px #ff9d00;
+            }
+        }
+    }
+
+    .firstBtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span {
+            display: flex;
+            margin-left: 7px;
+            color: hsla(0, 0%, 100%, 0.8);
+            font-size: 18px;
+        }
+    }
+}
+
+/* -------------------------------------------- */
+
+@media screen and (max-width: 587px) {
+    .screen {
+        background: url(../media/main-background.png);
+        background-size: cover;
+        position: relative;
+        height: 100vh;
+    }
+
+    .mainWebContainer {
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.144);
+        background-color: rgba(0, 0, 0, 0.192);
+        padding: 14px 12px 10px 12px;
+        backdrop-filter: blur(3px);
+        max-width: 320px;
+        margin: 0 auto;
+
+        .navBar {
+            align-items: center;
+            display: flex;
+            .txtName {
+                text-shadow: 0px 0px 15px #ff9d00;
+                color: #ff9d00;
+                font-weight: 800;
+                font-size: 20px;
+                opacity: 0.8;
+            }
+            .menuIcon {
+                color: white;
+                margin-left: auto;
+                font-size: 22px;
+                opacity: 0.8;
+                display: flex;
+            }
+            .navLinks {
+                display: none;
+                .navLink {
+                    transition: 150ms all;
+                    color: #ffffff;
+                    opacity: 0.8;
+                }
+                .navLink:hover {
+                    text-shadow: 0px 0px 12px #ff9d00;
+                    color: #ff9d00;
+                }
+            }
+        }
+    }
+
+    .mainInfoBlock {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        left: 50%;
+        top: 50%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+        .txtFirInfo {
+            margin-bottom: 10px;
+            color: #ffffff;
+            opacity: 0.8;
+            font-size: 18px;
+            max-width: 200px;
+            text-shadow: 0px 0px 2px #ff9d00;
+            span {
+                color: #ff9d00;
+            }
+        }
+
+        .txtSecInfo {
+            opacity: 0.8;
+            font-weight: 400;
+            color: #ffffff;
+            font-size: 12px;
+            text-shadow: 0px 0px 2px #ff9d00;
+        }
+
+        .btnBox {
+            justify-content: center;
+            display: flex;
+            gap: 30px;
+
+            button {
+                border-radius: 2px;
+                cursor: pointer;
+                width: 20px;
+                height: 50px;
+                backdrop-filter: blur(1px);
+                background: rgba(217, 217, 217, 0.15);
+                border: none;
+                line-height: 1;
+                letter-spacing: 0.03em;
+                font-size: 18px;
+                color: hsla(0, 0%, 100%, 0.8);
+                transition: 150ms all;
+            }
+
+            button:hover {
+                backdrop-filter: blur(2px);
+                background: rgba(217, 217, 217, 0.15);
+                box-shadow: 0px 0px 15px -5px #ff9d00;
+                text-shadow: 0px 0px 0px #ff9d00;
+            }
+        }
+    }
+
+    .firstBtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span {
+            display: flex;
+            margin-left: 7px;
+            color: hsla(0, 0%, 100%, 0.8);
+            font-size: 18px;
+        }
+    }
+
+    .btnIcon {
+        display: none;
+    }
+}
