@@ -2,7 +2,7 @@ import css from './AboutPage.module.scss';
 
 const AboutPage = () => {
     return (
-        <div className={css.test}>
+        <div className={css.screen}>
             <div></div>
         </div>
     );
