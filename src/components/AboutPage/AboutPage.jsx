@@ -1,16 +1,41 @@
+import { useState } from 'react';
 import css from './AboutPage.module.scss';
 
+import Projects from '../Sections/Projects';
+import MyStack from '../Sections/MyStack';
+import Certificates from '../Sections/Certificates';
+
 const AboutPage = () => {
+    const [activeSection, setActiveSection] = useState('Projects');
+
+    const renderSection = () => {
+        switch (activeSection) {
+            case 'Projects':
+                return <Projects />;
+            case 'MyStack':
+                return <MyStack />;
+            case 'Certificates':
+                return <Certificates />;
+            default:
+                return null;
+        }
+    };
+
     return (
         <div className={css.screen}>
             <div className={css.block}>
                 <div className={css.navBar}>
-                    <div className={css.child}>About Me</div>
-                    <div className={css.child}>Skills</div>
-                    <div className={css.child}>Contacts</div>
-                    <div className={css.child}>Web Sites</div>
-                    <div className={css.child}>Others</div>
+                    {['Projects', 'MyStack', 'Certificates'].map(section => (
+                        <div
+                            key={section}
+                            className={`${css.child} ${activeSection === section ? css.active : ''}`}
+                            onClick={() => setActiveSection(section)}
+                        >
+                            {section.replace(/([A-Z])/g, ' $1').trim()}
+                        </div>
+                    ))}
                 </div>
+                <div className={css.sectionContent}>{renderSection()}</div>
             </div>
         </div>
     );
