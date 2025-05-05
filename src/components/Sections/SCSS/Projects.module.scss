@@ -1,58 +1,125 @@
 .box {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+    color: white;
+    width: 100%;
+    height: 100%;
 }
 
 .mainTxt {
-    font-size: 26px;
-    margin-bottom: 8px;
-    color: #ff9d00;
-    opacity: 0.8;
-    font-weight: 900;
-    text-transform: capitalize;
-    // border-bottom: 2px solid #ffffff15;
-    padding-bottom: 3px;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
-.span {
-    color: #ff9d00;
-}
-
-.aboutTxt {
-    // width: 1020px;
-    width: 300px;
-    margin-bottom: 16px;
-    // padding-left: 15px;
-    letter-spacing: 0.05px;
-    font-style: italic;
-    opacity: 0.8;
-}
-
-.stackTxt {
-    font-size: 26px;
-    margin-bottom: 8px;
-    font-weight: 900;
-    // color: #ff9d00;
-    opacity: 0.8;
-    text-transform: capitalize;
-    // border-bottom: 2px solid #ffffff15;
-    padding-bottom: 3px;
-}
-
-.imgOne {
-    color: rgb(63, 63, 214);
-    font-size: 34px;
-    transition: 250ms all;
-    cursor: pointer;
-}
-
-.iconBox {
-    padding-left: 15px;
+.box {
     display: flex;
-    gap: 6px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
-.imgOne:hover {
-    scale: 1.1;
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    height: 150px;
+
+    &:hover {
+        transform: scale(1.03);
+    }
+
+    img {
+        width: 100%;
+        height: 140px;
+        object-fit: cover;
+    }
+
+    h3 {
+        padding: 10px;
+        font-size: 18px;
+    }
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    img.image {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 26px;
+        margin: 10px 0;
+    }
+
+    p {
+        max-width: 600px;
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    .stack {
+        margin: 15px 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+
+        span {
+            background: orange;
+            color: black;
+            padding: 6px 12px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+    }
+
+    .backBtn {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background: #ffa601;
+        border: none;
+        border-radius: 6px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s ease;
+
+        &:hover {
+            background: #ffb733;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .box {
+        justify-content: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .detail {
+        img.image {
+            width: 90%;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+        .stack span {
+            font-size: 12px;
+        }
+    }
 }

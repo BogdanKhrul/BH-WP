@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import css from './AboutPage.module.scss';
-
 import Projects from '../Sections/Projects';
 import MyStack from '../Sections/MyStack';
 import Certificates from '../Sections/Certificates';
@@ -23,6 +22,8 @@ const AboutPage = () => {
 
     return (
         <div className={css.screen}>
+            <h2>Information</h2>
+            <h3>Here you can find out more about me</h3>
             <div className={css.block}>
                 <div className={css.navBar}>
                     {['Projects', 'MyStack', 'Certificates'].map(section => (
