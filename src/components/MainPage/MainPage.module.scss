@@ -1,5 +1,5 @@
-$primary-color: #ff9d00;
-$text-color: #ffffff;
+$primary-color: rgb(255, 157, 0);
+$text-color: rgb(255, 255, 255);
 $bg-overlay: rgba(0, 0, 0, 0.767);
 $hover-bg: rgba(255, 157, 0, 0.2);
 
@@ -20,8 +20,8 @@ $hover-bg: rgba(255, 157, 0, 0.2);
     .mainWebContainer {
         border-bottom-right-radius: 14px;
         border-bottom-left-radius: 14px;
-        padding: 14px 15px 10px 15px;
-        max-width: 1330px;
+        padding: 14px 15px 14px 15px;
+        max-width: 1300px;
         margin: 0 auto;
 
         .navBar {
@@ -95,6 +95,7 @@ $hover-bg: rgba(255, 157, 0, 0.2);
         }
 
         .txtSecInfo {
+            font-size: 18px;
             opacity: 0.8;
             font-weight: 400;
             color: $text-color;

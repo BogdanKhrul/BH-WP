@@ -1,7 +1,8 @@
-$primary-color: #ff9d00;
-$text-color: #ffffff;
+$primary-color: rgb(255, 157, 0);
+$text-color: rgb(255, 255, 255);
 
 .screen {
+    background-color: $primary-color;
     height: 800px;
     display: flex;
     flex-direction: column;
