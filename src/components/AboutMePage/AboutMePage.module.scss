@@ -149,7 +149,12 @@ $black: rgb(0, 0, 0);
 
     .mainBlock {
         flex-direction: column;
-
+        .blockOne {
+            .nameTxt,
+            .aboutTxt {
+                text-align: left;
+            }
+        }
         .blockTwo {
             display: flex;
             justify-content: center;
@@ -190,7 +195,6 @@ $black: rgb(0, 0, 0);
 
         .blockTwo {
             display: flex;
-            justify-content: center;
 
             .wrapper {
                 width: 100%;
