@@ -44,6 +44,62 @@ const projects = [
         stack: ['React', 'Node.js', 'MongoDB'],
         description: 'A full-stack task management application.',
     },
+    {
+        id: 7,
+        title: 'Task Manager App',
+        image: '/images/taskmanager.png',
+        stack: ['React', 'Node.js', 'MongoDB'],
+        description: 'A full-stack task management application.',
+    },
+    {
+        id: 8,
+        title: 'Task Manager App',
+        image: '/images/taskmanager.png',
+        stack: ['React', 'Node.js', 'MongoDB'],
+        description: 'A full-stack task management application.',
+    },
+    {
+        id: 9,
+        title: 'Task Manager App',
+        image: '/images/taskmanager.png',
+        stack: ['React', 'Node.js', 'MongoDB'],
+        description: 'A full-stack task management application.',
+    },
+    {
+        id: 10,
+        title: 'Task Manager App',
+        image: '/images/taskmanager.png',
+        stack: ['React', 'Node.js', 'MongoDB'],
+        description: 'A full-stack task management application.',
+    },
+    {
+        id: 11,
+        title: 'Task Manager App',
+        image: '/images/taskmanager.png',
+        stack: ['React', 'Node.js', 'MongoDB'],
+        description: 'A full-stack task management application.',
+    },
+    {
+        id: 12,
+        title: 'Task Manager App',
+        image: '/images/taskmanager.png',
+        stack: ['React', 'Node.js', 'MongoDB'],
+        description: 'A full-stack task management application.',
+    },
+    {
+        id: 13,
+        title: 'Task Manager App',
+        image: '/images/taskmanager.png',
+        stack: ['React', 'Node.js', 'MongoDB'],
+        description: 'A full-stack task management application.',
+    },
+    {
+        id: 14,
+        title: 'Task Manager App',
+        image: '/images/taskmanager.png',
+        stack: ['React', 'Node.js', 'MongoDB'],
+        description: 'A full-stack task management application.',
+    },
 ];
 
 const Projects = () => {
@@ -67,11 +123,10 @@ const Projects = () => {
                 </div>
             ) : (
                 <>
-                    <h2 className={css.mainTxt}>Projects</h2>
                     <div className={css.projectList}>
                         {projects.map(project => (
                             <div key={project.id} className={css.card} onClick={() => setSelectedProject(project)}>
-                                <img src={project.image} alt={project.title} />
+                                {/* <img src={project.image} alt={project.title} /> */}
                                 <h3>{project.title}</h3>
                             </div>
                         ))}
