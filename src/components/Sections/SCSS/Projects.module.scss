@@ -1,3 +1,6 @@
+$orange: rgb(255, 157, 0);
+$text: rgb(255, 255, 255);
+
 .container {
     width: 100%;
     height: 100%;
@@ -16,16 +19,32 @@
     border-radius: 5px;
     cursor: pointer;
     height: 150px;
+    flex-direction: column;
+    display: flex;
+    padding: 12px;
 
     img {
         width: 100%;
-        height: 140px;
+        height: 120px;
         object-fit: cover;
+        border-radius: 4px;
+    }
+
+    .test {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin-top: auto;
     }
 
     h3 {
-        padding: 10px;
         font-size: 18px;
+        margin-right: auto;
+        color: $orange;
+    }
+
+    .linkOpen {
+        color: $orange;
     }
 }
 
@@ -37,7 +56,6 @@
     height: 100%;
     background: rgba(30, 30, 30, 0.95);
     z-index: 10;
-    padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,7 +78,7 @@
     margin-top: 15px;
 
     span {
-        background: orange;
+        background: $orange;
         color: black;
         padding: 6px 12px;
         border-radius: 5px;
@@ -72,7 +90,7 @@
     align-self: flex-start;
     margin-bottom: 20px;
     padding: 10px 20px;
-    background: #ffa601;
+    background: $orange;
     border: none;
     border-radius: 6px;
     font-weight: bold;
